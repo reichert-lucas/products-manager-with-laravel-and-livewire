@@ -1,3 +1,4 @@
+const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
@@ -10,6 +11,10 @@ module.exports = {
 
     theme: {
         extend: {
+            colors: {
+                primary: colors.indigo,
+                'cool-gray': colors.coolGray
+            },
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
             },
@@ -19,6 +24,10 @@ module.exports = {
     variants: {
         extend: {
             opacity: ['disabled'],
+            backgroundColor: ['even', 'odd'],
+            scale: ['active'],
+            boxShadow: ['active'],
+            textColor: ['group-hover']
         },
     },
 
