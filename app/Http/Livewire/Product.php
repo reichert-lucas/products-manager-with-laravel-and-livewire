@@ -25,7 +25,7 @@ class Product extends Component
         'form.name' => 'required',
         'form.description' => 'required',
         'form.price' => 'required|integer|min:0',
-        'image' => 'image|mimes:png|max:2048'
+        /* 'image' => 'image|mimes:png,jpg|max:2048' */
     ];
 
     protected $validationAttributes = [
